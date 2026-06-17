@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Tree</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* 마우스 올리면 메뉴 나오도록 함 */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    body{
+      padding-top:80px;
+      background:#f5f5f5;
+    }
+
+    .tree-img{
+      width:50%;
+      height:auto;
+      display:block;
+      margin:30px auto;
+    }
+
+    .traversal-section{
+      margin-top:50px;
+      margin-bottom:80px;
+    }
+
+    .traversal-card{
+      background:#4f4b4b;
+      color:white;
+      padding:30px;
+      height:100%;
+      border-radius:10px;
+      transition:0.3s;
+    }
+
+    .traversal-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .traversal-card h3{
+      font-size:32px;
+      font-weight:bold;
+      margin-bottom:25px;
+    }
+
+    .traversal-card p{
+      font-size:20px;
+      line-height:1.8;
+    }
+
+    .sequence{
+      font-size:24px;
+      font-weight:bold;
+      color:#9fdff0;
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 상단 네비게이션 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <!-- 왼쪽 상단 로고 -->
+      <a class="navbar-brand" href="index.html">ProgrammingCode</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- 오른쪽 상단 메뉴 -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Main</a>
+          </li>
+
+          <!--소개 -->
+          <li class="nav-item">
+            <a class="nav-link" href="intro.html">소개</a>
+          </li>
+
+          <!--시험 방식 안내-->
+          <li class="nav-item">
+            <a class="nav-link" href="방식.html">방식안내</a>
+          </li>
+
+          <!--시험 접수 안내-->
+          <li class="nav-item">
+            <a class="nav-link" href="접수.html">접수안내</a>
+          </li>
+          
+          <!--실기 메뉴 드롭다운-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="practiceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">필기</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Library.html">Library</a></li>
+              <li><a class="dropdown-item" href="Operator.html">Operator</a></li>
+              <li><a class="dropdown-item" href="Tree.html">Tree</a></li>
+              <li><a class="dropdown-item" href="Sort.html">Sort</a></li>
+            </ul>
+          </li>
+
+          <!-- 실기 메뉴 드롭다운 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="practiceDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">실기</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sql.html">SQL</a></li>
+              <li><a class="dropdown-item" href="linux.html">Linux</a></li>
+              <li><a class="dropdown-item" href="java.html">Java</a></li>
+              <li><a class="dropdown-item" href="python.html">Python</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tree 이미지 영역 -->
+  <div class="container text-center" style="margin-top:100px;">
+    <img src="https://www.image2url.com/r2/default/images/1781659635664-66774a6a-c732-4085-ac80-4a63b23fe11c.jpg" alt="Tree" style="width:50%; height:auto;" class="img-fluid">
+  </div>
+  
+  <!-- 순회 방식 설명 -->
+  <div class="container traversal-section">
+    <h1 class="text-center mb-5">트리 순회(Tree Traversal)</h1>
+    <div class="row g-4">
+      
+      <!-- Preorder -->
+      <div class="col-md-4">
+        <div class="traversal-card">
+          <h3>Preorder 순회</h3>
+          <p>루트(Root)를 먼저 방문한 후 왼쪽 서브트리 → 오른쪽 서브트리 순서로 탐색한다.</p>
+          <div class="sequence">A → B → D → E → C → F → G</div>
+        </div>
+      </div>
+      
+      <!-- Inorder -->
+      <div class="col-md-4">
+        <div class="traversal-card">
+          <h3>Inorder 순회</h3>
+          <p>왼쪽 서브트리를 먼저 방문한 후 루트(Root)를 방문하고 마지막으로 오른쪽 서브트리를 탐색한다.</p>
+          <div class="sequence">D → B → E → A → F → C → G</div>
+        </div>
+      </div>
+      
+      <!-- Postorder -->
+      <div class="col-md-4">
+        <div class="traversal-card">
+          <h3>Postorder 순회</h3>
+          <p>왼쪽 서브트리 → 오른쪽 서브트리를 먼저 방문한 뒤 마지막에 루트(Root)를 방문한다.</p>
+          <div class="sequence">D → E → B → F → G → C → A</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
