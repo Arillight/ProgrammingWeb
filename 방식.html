@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>방식안내</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  body{
+    padding-top:70px;
+    background-color:#f8f9fa;
+  }
+
+  /* 마우스 올리면 드롭다운 */
+  .dropdown:hover .dropdown-menu{
+    display:block;
+  }
+
+  /* 상단 CBT 이미지 */
+  .cbt-image{
+    max-width:600px;
+    width:50%;
+    height:auto;
+    display:block;
+    margin:40px auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  /* 제목 */
+  .main-title{
+    text-align:center;
+    font-size:2.5rem;
+    font-weight:bold;
+    margin-bottom:20px;
+  }
+
+  /* 설명 */
+  .main-description{
+    text-align:center;
+    color:#000000;
+    max-width:1000px;
+    margin:0 auto 70px;
+    line-height:1.8;
+    font-size:1.1rem;
+  }
+
+  /* 특징 영역 */
+  .feature-box{
+    text-align:center;
+    padding:30px 20px;
+    margin-bottom:30px;
+  }
+
+  .feature-icon{
+    width:90px;
+    height:90px;
+    background:#eeeeee;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 20px;
+    font-size:40px;
+  }
+
+  .feature-box h4{
+    font-size:1.3rem;
+    margin-bottom:15px;
+    font-weight:bold;
+  }
+
+  .feature-box p{
+    color:#444;
+    line-height:1.7;
+  }
+  </style>
+</head>
+
+<body>
+<!-- 상단 네비게이션 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">ProgrammingCode</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Main</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="intro.html">소개</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="방식.html">방식안내</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="접수.html">접수안내</a>
+        </li>
+
+        <!-- 필기 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">필기</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Library.html">Library</a></li>
+            <li><a class="dropdown-item" href="Operator.html">Operator</a></li>
+            <li><a class="dropdown-item" href="Tree.html">Tree</a></li>
+            <li><a class="dropdown-item" href="Sort.html">Sort</a></li>
+          </ul>
+        </li>
+
+        <!-- 실기 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">실기</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="sql.html">SQL</a></li>
+            <li><a class="dropdown-item" href="linux.html">Linux</a></li>
+            <li><a class="dropdown-item" href="java.html">Java</a></li>
+            <li><a class="dropdown-item" href="python.html">Python</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!----------------필기시험 방식------------------>
+<!-- CBT 이미지 -->
+<div class="container text-center">
+  <img src="https://www.image2url.com/r2/default/images/1781605458298-23ec245c-0b59-4ab9-86d1-eba2940f0b67.avif"alt="CBT 시험"class="cbt-image">
+</div>
+
+<!-- 제목 -->
+<div class="container">
+  <h1 class="main-title">필기시험 방식</h1>
+  <p class="main-description">
+    정보처리기능사 필기시험은 종이 시험지가 아닌 컴퓨터 화면을 이용하여 진행됩니다.
+    응시자는 모니터에 표시된 문제를 읽고 마우스로 정답을 선택하며,
+    시험 종료 후 즉시 점수와 합격 여부를 확인할 수 있습니다.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">🖥️</div>
+      <h4>컴퓨터 기반 시험(CBT)</h4>
+      <p>종이 시험지 대신 모니터를 보고 마우스로 답안을 클릭하는 방식입니다. *참고: 신분증 필참</p>
+    </div>
+
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">✔️</div>
+      <h4>객관식 4지 선다형</h4>
+      <p>모든 문제는 4개의 보기 중 정답 1개를 선택합니다.</p>
+    </div>
+
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">📚</div>
+      <h4>총 60문항 출제</h4>
+      <p>시험 시간은 총 60분이며 60문항이 출제됩니다.</p>
+    </div>
+
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">⏱️</div>
+      <h4>60분 시험</h4>
+      <p>평균적으로 1분당 1문제를 해결하는 속도로 시험이 진행됩니다.</p>
+    </div>
+
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">📊</div>
+      <h4>즉시 결과 확인</h4>
+      <p>시험 종료 버튼을 누르면 점수와 합격 여부를 바로 확인할 수 있습니다.</p>
+    </div>
+
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">🏆</div>
+      <h4>합격 기준</h4>
+      <p>100점 만점 기준 60점 이상(36문제 이상 정답) 획득 시 합격입니다.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 실기시험 방식 ==================== -->
+<div class="container mt-5">
+  <hr class="my-5">
+  <!-- 실기시험 이미지 -->
+  <div class="text-center">
+    <img src="https://www.image2url.com/r2/default/images/1781608117567-462c642b-99d9-46e2-b234-fa0510a82536.jpeg" alt="실기시험" class="cbt-image">
+  </div>
+  <!-- 제목 -->
+  <h1 class="main-title">실기시험 방식</h1>
+  <p class="main-description">
+    정보처리기능사 실기시험은 컴퓨터로 직접 프로그램을 실행하는 방식이 아닌
+    지필형(필답형) 시험으로 진행됩니다.
+    응시자는 문제를 읽고 답안을 직접 작성해야 하며,
+    프로그래밍 언어와 SQL 관련 문제의 결과를 분석하거나
+    빈칸을 채우는 형태로 출제됩니다.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">✍️</div>
+      <h4>지필형 시험(필답형)</h4>
+      <p>컴퓨터로 직접 코딩을 실행하는 방식이 아니라 시험지에 직접 답을 손으로 적는 방식입니다. *참고: 신분증 필참</p>
+    </div>
+
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">📝</div>
+      <h4>주관식 문항</h4>
+      <p>객관식 보기 없이 단답형 또는 서술형 문제로 출제됩니다.</p>
+    </div>
+
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">📚</div>
+      <h4>약 12문항 출제</h4>
+      <p>시험 시간은 총 90분이며 약 12문항 내외가 출제됩니다.</p>
+    </div>
+
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">⏰</div>
+      <h4>90분 시험</h4>
+      <p>문제를 분석하고 코드를 작성해야 하므로 충분한 풀이 시간이 제공됩니다.</p>
+    </div>
+
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">💻</div>
+      <h4>프로그래밍 언어 포함</h4>
+      <p>SQL, Java, Python 등의 코드 실행 결과를 예측하거나 빈칸에 들어갈 코드를 작성해야 합니다.</p>
+    </div>
+
+    <div class="col-md-4 feature-box">
+      <div class="feature-icon">🏆</div>
+      <h4>합격 기준</h4>
+      <p>필기와 동일하게 100점 만점 중 60점 이상을 받으면최종 합격입니다.</p>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
